@@ -198,6 +198,10 @@ update them. Without it, `from_pretrained` loads in inference mode (frozen).
 
 ## Lessons learned
 
+### 0. Questions must cover all topics
+
+If the teacher never scored tokens on these topics, so no KL pressure was applied to them hence hallucinating identically in both the SFT-only and the on-policy adapter .
+
 ### 1. SFT first, distillation second
 
 Pure on-policy distillation from a cold start is slow — random rollouts give noisy,
